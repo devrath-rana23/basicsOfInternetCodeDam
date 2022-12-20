@@ -1,0 +1,15 @@
+1.) DNS-> Domain Name System
+2.) DNS lookup means when our browser finds the corresponding system ip linked to the domain we are typing in search engine.
+3.) Our browser converts domain name like example.com to particular IP address using DNS resolver which is done manually by our system or is provided by our ISP(Internet Service Provider)
+4)Our OS generally communicates as client with IP-> 1.1.1.1 and conversation happens as below
+
+1.1.1.1 -> Asks where example.com is
+some random system 23.9.0.1 -> says he don't know but he knows where .com is 
+
+23.35.3.9 -> says he has all .com domains mapped in it and tells the client which is us communicating with him as 1.1.1.1 where exactly example.com domain lies
+
+[2606:2800:220:1:248:1893:25c8:1946]:443 -> this is where our example.com lies and generally https service is hosted in port 443 and http service is hosted in 80. It is convention not mandatory.
+
+23 port-> DNS service
+
+SO, basically ports like doors to process our data and provide multiple services. Our system itself has multiple ports. It can run multiple services simultaneously. These services listen in different ports of our system. Like our DB mysql service generally runs in 3306 port. When we create our React App it run in port-> 3000 as it generally listens in that port.
